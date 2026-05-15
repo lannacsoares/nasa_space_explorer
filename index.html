@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NASA Explorer</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Raleway:wght@300;400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+
+<canvas id="starfield"></canvas>
+
+<div class="site-wrapper">
+
+  <header>
+    <div class="logo">
+      <div class="logo-emblem"></div>
+
+      <div>
+        <div class="logo-text">NASA Explorer</div>
+        <div class="logo-sub">Astronomy Picture of the Day</div>
+      </div>
+    </div>
+
+    <div class="header-coords">
+      <div>RA <span id="ra">—</span> / DEC <span id="dec">—</span></div>
+      <div>UTC <span id="utctime">—</span></div>
+    </div>
+  </header>
+
+  <div class="controls">
+
+    <div class="control-group">
+      <div class="control-label">// Data de Observação</div>
+      <input type="date" id="datePicker"/>
+    </div>
+
+    <button class="btn-launch" id="btnFetch">
+      ▶ Iniciar Busca
+    </button>
+
+    <button class="btn-random" id="btnRandom">
+      ✦ Aleatório
+    </button>
+
+  </div>
+
+  <div class="info-strip">
+
+    <div class="info-cell">
+      <div class="info-cell-label">// Status</div>
+      <div class="info-cell-value accent" id="statusValue">
+        Aguardando
+      </div>
+    </div>
+
+    <div class="info-cell">
+      <div class="info-cell-label">// Banco de dados</div>
+      <div class="info-cell-value">NASA APOD</div>
+    </div>
+
+    <div class="info-cell">
+      <div class="info-cell-label">// Disponível desde</div>
+      <div class="info-cell-value">16 Jun 1995</div>
+    </div>
+
+    <div class="info-cell">
+      <div class="info-cell-label">// Última data exibida</div>
+      <div class="info-cell-value" id="lastFetched">—</div>
+    </div>
+
+  </div>
+
+  <div class="loading" id="loading">
+    <div class="orbit">
+      <div class="orbit-ring"></div>
+      <div class="orbit-ring"></div>
+      <div class="orbit-ring"></div>
+    </div>
+
+    <div class="loading-text">
+      TRANSMISSÃO EM ANDAMENTO…
+    </div>
+  </div>
+
+  <div class="error-panel" id="errorPanel">
+    <div class="error-code">404</div>
+
+    <div class="error-message" id="errorMessage">
+      Sinal perdido.
+    </div>
+  </div>
+
+  <div class="apod-card" id="apodCard">
+
+    <div id="mediaContainer"></div>
+
+    <div class="apod-body">
+
+      <div class="apod-meta">
+        <div class="apod-date-badge" id="apodDate"></div>
+        <div class="apod-type-badge" id="apodType"></div>
+      </div>
+
+      <h1 class="apod-title" id="apodTitle"></h1>
+
+      <div class="apod-copyright" id="apodCopyright"></div>
+
+      <div class="apod-divider"></div>
+
+      <p class="apod-explanation" id="apodExplanation"></p>
+
+      <div class="apod-actions" id="apodActions"></div>
+
+    </div>
+  </div>
+
+</div>
+
+<script type="module" src="main.js"></script>
+
+</body>
+</html>
