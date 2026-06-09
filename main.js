@@ -1,3 +1,4 @@
+import { saveSearch } from './history.js';
 import { fetchAPOD } from './api.js';
 import { renderAPOD, showState } from './ui.js';
 import { startStarfield } from './starfield.js';
@@ -19,6 +20,8 @@ async function loadAPOD(date){
     showState('loading');
 
     const data = await fetchAPOD(date);
+
+    await saveSearch(data);
 
     renderAPOD(data);
 

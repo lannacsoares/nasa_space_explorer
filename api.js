@@ -1,4 +1,4 @@
-const NASA_KEY = 'DEMO_KEY';
+const NASA_KEY = 'akl4Bdjb7MSlQaE3ICf3lDbP77xLEUahYKgWDaiC';
 
 export async function fetchAPOD(date) {
 
