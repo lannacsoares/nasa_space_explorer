@@ -13,8 +13,8 @@ O projeto foi desenvolvido como entrega final do Bootcamp, aplicando conceitos d
 | Nome | GitHub |
 |------|--------|
 | Lanna Soares | [@lannacsoares](https://github.com/lannacsoares) |
-| Geovanna Benedito | — |
-| Sophia Melo | — |
+| Geovanna Benedito | [@geovannadsb](https://github.com/geovannadsb) |
+| Sophia Melo | [@sophia473](https://github.com/sophia473) |
 
 ---
 
