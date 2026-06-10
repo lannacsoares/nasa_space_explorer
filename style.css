@@ -423,3 +423,28 @@ footer {
     align-items: flex-start;
   }
 }
+
+.btn-today {
+  background: transparent;
+  border: 1px solid var(--aurora);
+  color: var(--aurora);
+
+  font-family: 'Cinzel', serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+
+  padding: 0.65rem 1.8rem;
+  border-radius: 4px;
+
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-today:hover {
+  background: rgba(46, 196, 182, 0.1);
+
+  box-shadow: 0 0 20px rgba(46, 196, 182, 0.25);
+
+  color: var(--star-cold);
+}
