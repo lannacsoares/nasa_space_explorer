@@ -1,65 +1,90 @@
-# 🚀 NASA Space Explorer
+# NASA Space Explorer
+
+![Preview da aplicação](preview.png)
 
 Uma aplicação web interativa que consome a API pública da NASA APOD (Astronomy Picture of the Day) para exibir imagens astronômicas incríveis diretamente da NASA.
 
-O projeto foi desenvolvido como entrega intermediária do Bootcamp, aplicando conceitos de integração com API pública, testes automatizados, versionamento com Git/GitHub, organização de projeto front-end e deploy.
+O projeto foi desenvolvido como entrega final do Bootcamp, aplicando conceitos de integração com API pública, banco de dados em nuvem, testes automatizados, versionamento com Git/GitHub, trabalho em equipe com Pull Requests e deploy.
 
 ---
 
-# 🌌 Demonstração
+## Integrantes
 
-🔗 Acesse a aplicação online:
+| Nome | GitHub |
+|------|--------|
+| Lanna Soares | [@lannacsoares](https://github.com/lannacsoares) |
+| Geovanna Benedito | — |
+| Sophia Melo | — |
 
+---
+
+## Demonstração
+
+Acesse a aplicação online:
 https://lannacsoares.github.io/nasa_space_explorer/
 
 ---
 
-# 📸 Funcionalidades
+## Funcionalidades
 
-✅ Consumo da API oficial da NASA APOD  
-✅ Exibição da imagem astronômica do dia  
-✅ Suporte para imagens e vídeos  
-✅ Pesquisa por data específica  
-✅ Seleção aleatória de imagens históricas  
-✅ Interface futurista com animação espacial  
-✅ Feedback visual de carregamento  
-✅ Tratamento de erros de conexão  
-✅ Design responsivo  
-✅ Teste de integração com API  
-
----
-
-# 🛰️ API Utilizada
-
-O projeto utiliza a API pública da NASA:
-
-NASA APOD — Astronomy Picture of the Day
-
-📌 Documentação oficial:  
-https://api.nasa.gov/
+Consumo da API oficial da NASA APOD
+Exibição da imagem astronômica do dia
+Suporte para imagens e vídeos
+Pesquisa por data específica
+Seleção aleatória de imagens históricas
+Interface futurista com animação espacial
+Feedback visual de carregamento
+Tratamento de erros de conexão
+Design responsivo
+Teste de integração com API
+Histórico de buscas salvo no banco de dados
 
 ---
 
-# 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
-## Front-end
+### Front-end
 - HTML5
 - CSS3
 - JavaScript (ES Modules)
 
-## Testes
+### Banco de Dados
+- Supabase (PostgreSQL)
+
+### Testes
 - Jest
 
-## Versionamento
+### Versionamento
 - Git
 - GitHub
 
-## Deploy
+### Deploy
 - GitHub Pages
 
 ---
 
-# 📁 Estrutura do Projeto
+## Como rodar localmente
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/lannacsoares/nasa_space_explorer
+```
+
+2. Entre na pasta:
+```bash
+cd nasa_space_explorer
+```
+
+3. Instale as dependências:
+```bash
+npm install
+```
+
+4. Abra o arquivo `index.html` no navegador ou use a extensão **Live Server** no VS Code.
+
+---
+
+## Estrutura do Projeto
 
 ```txt
 nasa_space_explorer/
@@ -71,11 +96,14 @@ nasa_space_explorer/
 ├── ui.js
 ├── utils.js
 ├── starfield.js
+├── supabase.js
 │
 ├── api.test.js
 │
 ├── package.json
 ├── package-lock.json
 ├── vercel.json
+├── preview.png
 │
 └── README.md
+```
