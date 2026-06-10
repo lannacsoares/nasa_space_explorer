@@ -40,3 +40,17 @@ document
   });
 
 loadAPOD(today);
+
+document
+  .getElementById('btnToday')
+  .addEventListener('click', () => {
+
+    const today =
+      new Date()
+      .toISOString()
+      .split('T')[0];
+
+    picker.value = today;
+
+    loadAPOD(today);
+  });
